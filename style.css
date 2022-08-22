@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    text-align: center;
+    padding-top: 50px;
+    border: 3px solid rgb(81, 1, 95);
+    background-color: rgba(246, 159, 78, 0.688);
+    position: relative;
+    top: 30px;
+    
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question > h3{
+    font-size: 50px;
+    margin-top: 0;
+    color: rgb(105, 62, 13);
+}
+.images{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.jake,
+.john,
+.michael{
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+}
+.jake{
+    background-image: url('./images/jake.jpg');
+}
+.john{
+    background-image: url('./images/jd.png');
+    background-position: center;
+}
+.michael{
+    background-image: url('./images/michael-scott.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.buttons{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.buttons > button{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(68, 41, 41);
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.buttons > button:hover{
+    background-color: rgb(13, 133, 79);
+    border: none;
+}
+
+.alert__bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(37, 34, 34, 0.671);
+    z-index: 2;
+    display: none;
+    top: 0;
+}
+.alert__window{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.alert__text{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.alert__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.alert__buttons > button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#yes{
+    background-color: rgb(143, 239, 167);
+}
+#no{
+    background-color: rgb(165, 71, 105);
+}
